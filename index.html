@@ -15,32 +15,34 @@
                 <input type="text" value="N° DNI" required>
 
             <div id="lista-eventos">    
-                <label for="entradas">Eventos disponibles:
+                <label for="entradas">Eventos disponibles:</label>
                 <select name="eventos" id="eventos-disponibles" required>
                     <option selected disabled>Elegir:</option>
                 </select>
-                </label>
+                
             </div>    
-            <div id="precios">
-            </div>
+           
             <div>
-                <label for="cantidad">Adultos:
-                    <input id="cantidad-adultos" type="number" min="0" max="6">
-                </label>
-                <label for="cantidad">Menores:
-                    <input id="cantidad-menores" type="number" min="0" max="6">
-                </label>
+                <label for="cantidad adultos">Adultos:</label>
+                    <input type="number" id="cantidad-adultos" value= "0" min="0">
+                
+                <label for="cantidad menores">Menores:</label>
+                    <input type="number" id="cantidad-menores" value="0" min="0">
+                
+                <button id="button" class="btn btn-secondary">Agregar</button>
             </div>
-            <button type="submit" id="button" class="btn btn-secondary">Agregar</button>
+            
+        
         </div>
     </form>
     <div>
         <button type= "button" id="ver-carrito">Ver compra</button>
+        <div id="carrito-contenedor"></div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="listaEventos.js"></script>
     <script src="otro.js"></script>
     <!-- <script src="index.js"></script> -->
