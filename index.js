@@ -18,6 +18,7 @@ function mostrarEventos() {
     })
 }
 mostrarEventos()
+
 function agregarAlCarrito(evento, cantidadAdulto, cantidadMenor) {
     
     if (eventoYaEnCarrito(evento.id)) {
@@ -57,7 +58,7 @@ function verCarrito() {
         <p>${item.nombre}</p>
         <p>Adultos: ${item.cantidadAdulto}</p>
         <p>Menores: ${item.cantidadMenor}</p>
-        <p>Total: ${calcularTotal(item)}</p>
+        <p>Total: $${calcularTotal(item)}</p>
         `
         carritoContenedor.appendChild(itemsDiv)
     })
